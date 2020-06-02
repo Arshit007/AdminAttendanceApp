@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@+id/displayLinearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="3dp"
+        android:padding="10dp"
+        app:cardUseCompatPadding="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+        <ScrollView
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <TextView
+                    android:textSize="10dp"
+                    android:layout_below="@id/edit_text_course_credit"
+                    android:id="@+id/txtDepartment"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:text="Select Deparment Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+                <Spinner
+                    android:id="@+id/DeptFieldspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtDepartment"
+                    android:hint="Ex(BBA,BTech,MBA,MCA) "
+                    android:layout_marginTop="0dp"
+                    android:textSize="10dp"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:inputType="text"
+
+                    />
+
+                <TextView
+
+                    android:textSize="10dp"
+                    android:id="@+id/txtDepartmentField"
+                    android:layout_below="@id/DeptFieldspinner"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:inputType="text"
+
+                    android:text="Select Deparment Field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/DeptNamespinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtDepartmentField"
+                    android:hint="Ex(BBA,BTech,MBA,MCA) "
+                    android:layout_marginTop="0dp"
+                    android:textSize="10dp"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:inputType="text"
+
+                    />
+
+                <TextView
+                    android:textSize="10dp"
+                    android:id="@+id/txtDepartmentSpec"
+                    android:layout_below="@id/DeptNamespinner"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:inputType="text"
+
+                    android:text="Select Deparment Specilisation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <Spinner
+                    android:id="@+id/DeptSpecspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtDepartmentSpec"
+                    android:hint="Ex(BBA,BTech,MBA,MCA) "
+                    android:layout_marginTop="0dp"
+                    android:textSize="10dp"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:inputType="text"
+
+                    />
+
+
+
+                <TextView
+                    android:textSize="10dp"
+                    android:id="@+id/txtSemester"
+                    android:layout_below="@id/DeptSpecspinner"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:inputType="text"
+
+                    android:text="Select Semester To be Added"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <Spinner
+                    android:id="@+id/Semesterspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtSemester"
+                    android:hint="Ex(BBA,BTech,MBA,MCA) "
+                    android:layout_marginTop="0dp"
+                    android:textSize="10dp"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:inputType="text"
+
+                    />
+
+
+                <TextView
+                    android:textSize="10dp"
+                    android:id="@+id/txtCourse"
+                    android:layout_below="@id/Semesterspinner"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:text="Select Course"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <Spinner
+                    android:id="@+id/CourseSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtCourse"
+                    android:layout_marginTop="0dp"
+                    android:textSize="10dp"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:inputType="text"
+
+                    />
+
+
+
+                <TextView
+                    android:textSize="10dp"
+                    android:id="@+id/txtDay"
+                    android:layout_below="@id/CourseSpinner"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:inputType="text"
+
+                    android:text="Enter The Day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <Spinner
+                    android:id="@+id/Dayspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtDay"
+                    android:hint="Ex(BBA,BTech,MBA,MCA) "
+                    android:layout_marginTop="0dp"
+                    android:textSize="10dp"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:inputType="text"
+
+                    />
+
+
+                <TextView
+                    android:textSize="10dp"
+                    android:id="@+id/txtTime"
+                    android:layout_below="@id/Dayspinner"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:inputType="text"
+
+                    android:text="Select The Time Slot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <Spinner
+                    android:id="@+id/Timespinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTime"
+                    android:layout_marginTop="0dp"
+                    android:textSize="10dp"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:inputType="text"
+
+                    />
+
+                <TextView
+                    android:textSize="10dp"
+                    android:id="@+id/txtTeacher"
+                    android:layout_below="@id/Timespinner"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:text="Assign Teacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <Spinner
+                    android:id="@+id/TeacherSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTeacher"
+                    android:layout_marginTop="0dp"
+                    android:textSize="10dp"
+                    android:textStyle="italic|bold"
+                    android:padding="10dp"
+                    android:inputType="text"
+
+                    />
+
+
+                <EditText
+                    android:layout_below="@id/TeacherSpinner"
+                    android:id="@+id/RoomNumber"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:hint="Assign Room Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:background="#1abc9c"
+                    android:layout_below="@id/RoomNumber"
+                    android:id="@+id/btn_add_courses"
+
+                    />
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

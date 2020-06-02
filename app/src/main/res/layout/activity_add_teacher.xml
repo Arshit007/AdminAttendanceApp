@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@+id/displayLinearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="3dp"
+        android:padding="10dp"
+        app:cardUseCompatPadding="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_text_teacher_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Teacher Name"
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                />
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/edit_text_teacher_number"
+                android:layout_below="@id/edit_text_teacher_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:hint="Enter Teacher Number"
+                android:inputType="number"
+                />
+
+
+
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_below="@id/edit_text_teacher_number"
+                android:id="@+id/txtDepartment1"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:text="Enter Deparment Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <Spinner
+                android:id="@+id/DeptFieldspinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDepartment1"
+                android:hint="Ex(BBA,BTech,MBA,MCA) "
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+
+                />
+
+            <TextView
+
+                android:textSize="15dp"
+                android:id="@+id/txtDepartmentField1"
+                android:layout_below="@id/DeptFieldspinner1"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+
+                android:text="Enter Deparment Field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/DeptNamespinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDepartmentField1"
+                android:hint="Ex(BBA,BTech,MBA,MCA) "
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+
+                />
+
+            <TextView
+                android:textSize="15dp"
+                android:id="@+id/txtDepartmentSpec1"
+                android:layout_below="@id/DeptNamespinner1"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+
+                android:text="Enter Deparment Specilisation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Spinner
+                android:id="@+id/DeptSpecspinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDepartmentSpec1"
+                android:hint="Ex(BBA,BTech,MBA,MCA) "
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#2ecc71"
+                android:id="@+id/btn_add_teacher"
+                android:layout_alignParentBottom="true"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

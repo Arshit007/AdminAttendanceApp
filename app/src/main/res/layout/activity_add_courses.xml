@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@+id/displayLinearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<include layout="@layout/toolbar"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="3dp"
+        android:padding="10dp"
+        app:cardUseCompatPadding="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/edit_text_course_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:hint="Enter Course Name"
+                android:inputType="text"
+
+                />
+
+
+            <EditText
+                android:id="@+id/edit_text_course_credit"
+                android:layout_below="@id/edit_text_course_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:hint="Enter Course Credit"
+                android:inputType="number"
+
+
+                />
+
+
+
+
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_below="@id/edit_text_course_credit"
+                android:id="@+id/txtDepartment"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:text="Enter Deparment Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <Spinner
+                android:id="@+id/DeptFieldspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDepartment"
+                android:hint="Ex(BBA,BTech,MBA,MCA) "
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+
+                />
+
+            <TextView
+
+                android:textSize="15dp"
+                android:id="@+id/txtDepartmentField"
+                android:layout_below="@id/DeptFieldspinner"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+
+                android:text="Enter Deparment Field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/DeptNamespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDepartmentField"
+                android:hint="Ex(BBA,BTech,MBA,MCA) "
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+
+                />
+
+            <TextView
+                android:textSize="15dp"
+                android:id="@+id/txtDepartmentSpec"
+                android:layout_below="@id/DeptNamespinner"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+
+                android:text="Enter Deparment Specilisation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Spinner
+                android:id="@+id/DeptSpecspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDepartmentSpec"
+                android:hint="Ex(BBA,BTech,MBA,MCA) "
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+
+                />
+
+
+
+            <TextView
+                android:textSize="15dp"
+                android:id="@+id/txtSemester"
+                android:layout_below="@id/DeptSpecspinner"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+
+                android:text="Enter Semester To be Added"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Spinner
+                android:id="@+id/Semesterspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtSemester"
+                android:hint="Ex(BBA,BTech,MBA,MCA) "
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+
+                />
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:background="#1abc9c"
+                android:id="@+id/btn_add_courses"
+                android:layout_alignParentBottom="true"
+                />
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
